@@ -1,0 +1,14 @@
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\bin\Debug\GameUI.exe
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\bin\Debug\GameUI.pdb
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.csproj.AssemblyReference.cache
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\MainWindow.g.cs
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\App.g.cs
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI_MarkupCompile.cache
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI_MarkupCompile.lref
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\MainWindow.baml
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.g.resources
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.Properties.Resources.resources
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.csproj.GenerateResource.cache
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.csproj.CoreCompileInputs.cache
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.exe
+C:\Users\Xavier\Desktop\Projects\C# Game\DaGame\GameUI\obj\Debug\GameUI.pdb
