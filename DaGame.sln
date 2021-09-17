@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUI", "GameUI\GameUI.csproj", "{76EC82ED-2838-4D96-B46D-2460745EF9DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{07A60A89-9596-4677-907F-167B335767E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{76EC82ED-2838-4D96-B46D-2460745EF9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76EC82ED-2838-4D96-B46D-2460745EF9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76EC82ED-2838-4D96-B46D-2460745EF9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A60A89-9596-4677-907F-167B335767E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A60A89-9596-4677-907F-167B335767E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A60A89-9596-4677-907F-167B335767E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A60A89-9596-4677-907F-167B335767E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
