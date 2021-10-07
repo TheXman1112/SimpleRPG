@@ -4,3 +4,4 @@ C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\Engine\obj\Debug\Engine.cspro
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\Engine\obj\Debug\Engine.dll
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\Engine\obj\Debug\Engine.pdb
+C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\Engine\obj\Debug\Engine.g.resources

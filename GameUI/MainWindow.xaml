@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameUI"
         mc:Ignorable="d"
+        FontSize="11pt"
         Title="DaGame" Height="768" Width="1024">
     <Grid>
         <Grid.RowDefinitions>
@@ -20,7 +21,6 @@
 
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="Coral" />
         
-        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="LavenderBlush" />
         <Grid Grid.Row="1" Grid.Column="0" Background="LavenderBlush">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -50,9 +50,50 @@
             <Label Grid.Row="5" Grid.Column="0" Content="Level: " />
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}" />
             <Button Grid.Row="6" Grid.Column="1" Content="Add XP" Click="ButtonBase_OnClick"></Button>
-        </Grid> 
-        
-        <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Goldenrod" />
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1"
+              Background="Goldenrod">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1"
+                    BorderBrush="Gainsboro"
+                    BorderThickness="1">
+                
+                <Grid Margin="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                               HorizontalAlignment="Center"
+                               Text="{Binding CurrentLocation.Name}"/>
+
+                    <Image Grid.Row="1"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Height="125"
+                           Width="125"
+                           Source="{Binding CurrentLocation.ImgName}"/>
+
+                    <TextBlock Grid.Row="2"
+                               HorizontalAlignment="Center"
+                               Text="{Binding CurrentLocation.Description}"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"/>
+                </Grid>
+            </Border>
+        </Grid>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="SteelBlue" />
         <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="PaleGreen" />
 
