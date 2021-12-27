@@ -22,7 +22,7 @@ namespace Engine.Factories
             //Create quest
             _quests.Add(new Quest(1,
                 "Clear the weed garden",
-                "Kill the snakes, they keep eating my weed! Last time, they ate so much and started tripping out, be careful!",
+                "Kill the snakes, they keep eating my weed! Last time, they ate so much and started tripping out! So be careful!",
                 itemsToComplete,
                 25, 10,
                 rewardItems));

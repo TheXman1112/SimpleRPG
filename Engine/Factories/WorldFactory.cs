@@ -43,7 +43,9 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 2, "Hippie House",
                 "There's a strong skunk smell coming from this house.",
                 "/Engine;component/Images/Locations/HerbalistsHut.png");
-            
+
+            newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
+
             newWorld.AddLocation(0, 3, "Weed Farm",
                 "That makes sense.",
                 "/Engine;component/Images/Locations/HerbalistsGarden.png");

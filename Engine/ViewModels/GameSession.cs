@@ -15,6 +15,7 @@ namespace Engine.ViewModels
 
         public Player CurrentPlayer { get; set; }
         public World CurrentWorld { get; set; }
+
         public Location CurrentLocation
         {
             get { return _currentLocation; }
@@ -27,8 +28,11 @@ namespace Engine.ViewModels
                 OnPropertyChanged(nameof(HasLocationToEast));
                 OnPropertyChanged(nameof(HasLocationToWest));
                 OnPropertyChanged(nameof(HasLocationToSouth));
+
+                GivePlayerQuestsAtLocation();
             }
         }
+
         public bool HasLocationToNorth
         {
             get 
@@ -60,7 +64,7 @@ namespace Engine.ViewModels
 
         public GameSession()
         {
-            CurrentPlayer = new Player 
+            CurrentPlayer = new Player
             {
                 Name = "Xman",
                 CharacterClass = "Ranger",
@@ -69,7 +73,9 @@ namespace Engine.ViewModels
                 ExperiencePoints = 0,
                 Level = 1
             };
+
             CurrentWorld = WorldFactory.CreateWorld();
+
             CurrentLocation = CurrentWorld.LocationAt(0, 0);
         }
 
@@ -80,6 +86,7 @@ namespace Engine.ViewModels
                 CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate + 1);
             }
         }
+
         public void MoveEast()
         {
             if (HasLocationToEast)
@@ -87,6 +94,7 @@ namespace Engine.ViewModels
                 CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate + 1, CurrentLocation.YCoordinate);
             }
         }
+
         public void MoveWest()
         {
             if (HasLocationToWest)
@@ -94,12 +102,24 @@ namespace Engine.ViewModels
                 CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate - 1, CurrentLocation.YCoordinate);
             }   
         }
+
         public void MoveSouth()
         {
             if (HasLocationToSouth)
             {
                 CurrentLocation = CurrentWorld.LocationAt(CurrentLocation.XCoordinate, CurrentLocation.YCoordinate - 1);
-            }           
+            }
+        }
+
+        private void GivePlayerQuestsAtLocation()
+        {
+            foreach(Quest quest in CurrentLocation.QuestsAvailableHere)
+            {
+                if(!CurrentPlayer.Quests.Any(q => q.PlayerQuest.ID == quest.ID))
+                {
+                    CurrentPlayer.Quests.Add(new QuestStatus(quest));
+                }
+            }
         }
     }
 }
