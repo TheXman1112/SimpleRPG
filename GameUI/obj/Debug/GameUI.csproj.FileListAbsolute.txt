@@ -18,7 +18,6 @@ C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\GameUI.cspro
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\MainWindow.g.cs
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\App.g.cs
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\GameUI_MarkupCompile.cache
-C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\GameUI_MarkupCompile.lref
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\MainWindow.baml
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\GameUI.g.resources
 C:\Users\Xavier\Desktop\Projects\C# Game\SimpleRPG\GameUI\obj\Debug\GameUI.Properties.Resources.resources

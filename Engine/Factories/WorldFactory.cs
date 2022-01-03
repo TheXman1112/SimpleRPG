@@ -23,7 +23,9 @@ namespace Engine.Factories
             newWorld.AddLocation(-2, 0, "The Cornfield",
                 "Cornfield where the Quad T hunts.",
                 "/Engine;component/Images/Locations/FarmFields.png");
-            
+
+            newWorld.LocationAt(-2, 0).AddMonster(2, 100);
+
             newWorld.AddLocation(-1, 1, "General Store",
                 "A store for all your general needs.",
                 "/Engine;component/Images/Locations/Trader.png");
@@ -39,16 +41,20 @@ namespace Engine.Factories
             newWorld.AddLocation(2, 1, "The Sticky Forest",
                 "The trees in this forest are covered in a white sticky substance.",
                 "/Engine;component/Images/Locations/SpiderForest.png");
+
+            newWorld.LocationAt(2, 1).AddMonster(3, 100);
             
             newWorld.AddLocation(0, 2, "Hippie House",
                 "There's a strong skunk smell coming from this house.",
                 "/Engine;component/Images/Locations/HerbalistsHut.png");
 
-            newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
+            newWorld.LocationAt(0, 2).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
 
             newWorld.AddLocation(0, 3, "Weed Farm",
                 "That makes sense.",
                 "/Engine;component/Images/Locations/HerbalistsGarden.png");
+
+            newWorld.LocationAt(0, 3).AddMonster(1, 100);
 
             return newWorld;
         }
